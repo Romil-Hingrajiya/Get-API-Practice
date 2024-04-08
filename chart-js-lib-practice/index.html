@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body class="bg-gray-200">
+
+    <div class="w-full mx-auto">
+        <canvas id="line"></canvas>
+    </div><hr class="h-2 bg-gray-900">
+
+    <div class="w-2/3 mx-auto my-10">
+        <canvas id="bar"></canvas>
+    </div><hr class="h-2 bg-gray-900">
+    
+    <div class="w-2/3 mx-auto my-10">
+        <canvas id="bubble"></canvas>
+    </div><hr class="h-2 bg-gray-900">
+
+    <!-- <select name="" class="w-full bg-black text-white mx-auto">
+        <option value="" id="pie" onclick="pie('pie')">Pie</option>
+        <option value="" id="doughnut" onclick="doughnut()">Doughnut</option>
+        <option value="" id="polarArea" onclick="polarArea()">polarArea</option>
+    </select> -->
+
+    <div class="w-full flex justify-around items-center">
+        <div class="w-[40%] mx-auto my-10">
+            <canvas id="pie"></canvas>
+        </div>
+    
+        <div class="w-[40%] mx-auto my-10">
+            <canvas id="doughnut"></canvas>
+        </div>
+    </div>
+    <hr class="h-2 bg-gray-900">
+
+    <div class="w-[40%] mx-auto my-10">
+        <canvas id="polarArea"></canvas>
+    </div><hr class="h-2 bg-gray-900">
+
+    <div class="w-[40%] mx-auto my-10">
+        <canvas id="radar"></canvas>
+    </div><hr class="h-2 bg-gray-900">
+
+    <div class="w-2/3 mx-auto my-10">
+        <canvas id="scatter"></canvas>
+    </div><hr class="h-2 bg-gray-900">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="./line-chart.js"></script>
+    <script src="./bar-chart.js"></script>
+    <script src="./pie-doughnut-chart.js"></script>
+    <script src="./bubble-chart.js"></script>
+    <script src="./polarArea-chart.js"></script>
+    <script src="./radar-chart.js"></script>
+    <script src="./scatter-chart.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Random Jokes Generator</title>
+    <style>
+        h1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            opacity: 0;
+        }
+        .joke-fade{
+            opacity: 1;
+            transition: opacity 1.5s;
+        }
+    </style>
+</head>
+
+<body class="bg-orange-500 w-full h-screen overflow-y-hidden flex justify-center items-center">
+
+    <div class="sm:w-1/2 w-full h-auto flex flex-col items-center rounded-lg bg-gray-900 mx-3 sm:mx-0" style="box-shadow: -7px -7px 4px white;">
+
+        <div class="emoji">
+            <span style="font-size: 20vh; display: block; text-align: center;"> &#128514; </span>
+        </div>
+
+        <div>
+            <h1 id="joke" class="joke-fade text-slate-100 text-justify font-bold text-2xl tracking-wider mx-16 my-8"></h1>
+        </div>
+
+        <div>
+            <button id="btn" type="submit" class="bg-yellow-500 text-gray-900 text-md font-bold rounded-lg p-2.5 px-6 my-10 shadow-md shadow-orange-500">Get Random Joke</button>
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

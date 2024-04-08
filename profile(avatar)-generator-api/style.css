@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+.title {
+    letter-spacing: 1px;
+    font-weight: 900;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 4rem;
+    animation-name: title;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    color: white;
+}
+@keyframes title {
+    0% {
+        text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 5px #11ff00, 0 0 5px #11ff00, 0 0 5px #11ff00;
+    }
+    25% {
+        text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 5px #11ff00, 0 0 5px #11ff00, 0 0 5px #11ff00;
+        transform: scale(1.05);
+        transition: all 0.05s ease;
+    }
+
+    50% {
+        text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 5px #11ff00, 0 0 5px #11ff00, 0 0 5px #11ff00;
+        transform: scale(1.15);
+        letter-spacing: 2px;
+        transition: all 0.05s ease;
+    }
+
+    75% {
+        text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 5px #11ff00, 0 0 5px #11ff00, 0 0 5px #11ff00;
+        transform: scale(1.05);
+        transition: all 0.05s ease;
+    }
+    100% {
+        text-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #11ff00, 0 0 0px #11ff00, 0 0 0px #11ff00;
+    }
+}
+
+#click:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}

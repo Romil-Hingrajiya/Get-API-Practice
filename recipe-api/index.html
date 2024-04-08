@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Recipe</title>
+</head>
+
+<body class="bg-orange-400 w-full h-screen flex justify-center relative p-4">
+
+    <div class="w-[95%] sm:w-[60%] h-auto p-8 bg-white rounded-[0.6rem] absolute grid grid-cols-3 gap-6 items-center my-4" style="box-shadow: 3px 3px 10px #202030;">
+
+        <input id="userInput" type="text" placeholder="Type A Dish Name Here..." class="col-span-2 p-4 text-lg border-0 outline-0 border-b-2 border-b-[#202030]">
+        <button id="btn" class="text-gray-800 text-xl font-bold bg-orange-500 rounded-[0.6rem] tracking-wider p-4">Search</button>
+        <p id="result" class="col-span-3"></p>
+        
+    </div>
+
+    <div id="details" class="hidden w-[95%] sm:w-[60%] h-auto mt-0.5 p-8 py-12 bg-orange-200 rounded-[0.6rem] absolute" style="box-shadow: 5px 5px 10px #202030;">
+        <div class="col-span-3 flex justify-between z-50 h-full">
+            
+            <div>
+                <p id="instructions" class="font-bold text-xl text-justify mr-4"></p>
+                <span class="font-bold text-gray-900 text-lg text-justify block mt-8">Category : <span id="category"  class="text-gray-500 text-sm"></span></span>
+                <span class="font-bold text-gray-900 text-lg text-justify block">Tags : <span id="tags" class="text-gray-500 text-sm"></span></span>
+                <div id="detailContainer">
+                    <span class="font-bold text-gray-900 text-2xl text-justify block uppercase mt-8">Recipe Ingredients : </span>
+                </div>
+            </div>
+
+            <span id="close" class="text-2xl font-bold bg-gray-200 text-orange-500 px-2 py-0.5 border-2 border-gray-800 rounded-lg self-start ml-4 mt-2 cursor-pointer">&#88;</span>
+        
+        </div>        
+    </div>
+
+    
+    
+    
+    <script src="./script.js"></script>
+</body>
+
+</html>
